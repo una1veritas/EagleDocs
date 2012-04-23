@@ -298,14 +298,13 @@ UsedLibrary="/Applications/EAGLE/lbr/xicor.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/xilinx-xcv.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/zilog.lbr"
-UsedLibrary="/Users/sin/Downloads/JAL.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="420 219 1019 618"
+Loc="660 369 1259 768"
 State=2
 Number=0
 
 [Desktop]
-Screen="1440 900"
+Screen="1920 1200"
 Window="Win_1"
