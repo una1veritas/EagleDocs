@@ -11,12 +11,18 @@ UsedLibrary="/Users/sin/Documents/eagle/mylibrary/My Library.lbr"
 UsedLibrary="/Users/sin/Documents/eagle/mylibrary/SparkFun.lbr"
 
 [Win_1]
+Type="Control Panel"
+Loc="660 369 1259 768"
+State=2
+Number=0
+
+[Win_2]
 Type="Board Editor"
-Loc="360 248 959 647"
-State=0
+Loc="360 248 1787 1036"
+State=1
 Number=2
-File="Op-amp Microphone Preamp.brd"
-View="-2 -1.6 102 81.6"
+File="Op-amp Microphone Preamp single-supply.brd"
+View="20.1229 35.8828 72.1229 81.733"
 WireWidths=" 0 0.254 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -49,19 +55,13 @@ AddLevel=2
 PadsSameType=0
 Layer=16
 
-[Win_2]
-Type="Control Panel"
-Loc="660 369 1259 768"
-State=2
-Number=0
-
 [Win_3]
 Type="Schematic Editor"
-Loc="360 248 1605 951"
+Loc="360 248 1703 996"
 State=1
 Number=1
-File="Op-amp Microphone Preamp.sch"
-View="-10.9302 15.1774 121.576 119.697"
+File="Op-amp Microphone Preamp single-supply.sch"
+View="-65.1876 -25.5609 183.623 139.099"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -93,7 +93,7 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: -10.9302 15.1774 121.576 119.697"
+Views=" 1: -65.1876 -25.5609 183.623 139.099"
 Sheet=1
 
 [Desktop]
