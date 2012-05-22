@@ -1,0 +1,33 @@
+Knihovna GME 2004 pro EAGLE v.4.1x
+-----------------------------------
+
+CD:\
++---Datasheets		katalogové listy souèástek
+\---GME_2004		soubory knihoven pro EAGLE
+
+
+Na tomto CD najdete:
+- soubory knihoven (*.lbr)
+- katalogové listy souèástek (*.pdf)
+
+
+Instalace:
+1) Knihovna byla vytvoøena dle katologu GM Electronics z roku 2004 a je urèena pro program EAGLE v.4.11r2 a vyšší.
+
+2) Adresáø GME_2004 (pøípadnì jen soubory *.lbr) nakopírujte do adresáøe s knihovnami EAGLE (C:\Program Files\Eagle\lbr\).
+
+3) Spuste EAGLE a v Control Panelu pomocí menu "Options/Direstories..." nastavte cestu ke knihovnám GME.
+
+4) Restartujte EAGLE a mùete zaèít pracovat s knihovnami GME.
+
+
+V pøípadì problémù nás prosím kontaktujte.
+
+CADware s.r.o.
+Aloisina vıšina 447/13
+460 05 Liberec
+
+tel/fax: 485 106 131, 485 107 114
+web: www.cadware.cz
+e-mail: info@cadware.cz
+---
