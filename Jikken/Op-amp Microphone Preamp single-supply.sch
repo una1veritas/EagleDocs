@@ -1783,6 +1783,12 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <pin name="LEFT" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="SLEEVE" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
 </symbol>
+<symbol name="5V">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 <symbol name="VCC2">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
@@ -2064,6 +2070,18 @@ Simple 3.5mm common PCB mount audio jack. SKU: PRT-08032</description>
 <connect gate="G$1" pin="RIGHT" pad="RING"/>
 <connect gate="G$1" pin="SLEEVE" pad="SLEEVE"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5V">
+<gates>
+<gate name="G$1" symbol="5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -2380,14 +2398,14 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="R5" library="My Library" deviceset="RESISTOR" device="PTH-1/6W" value="22.1k"/>
 <part name="U1" library="SparkFun" deviceset="AUDIO-JACK" device="PTH"/>
 <part name="R7" library="My Library" deviceset="RESISTOR" device="PTH-1/6W" value="22.1k"/>
-<part name="P+1" library="SparkFun" deviceset="VCC" device=""/>
+<part name="P+1" library="SparkFun" deviceset="5V" device=""/>
 <part name="P+2" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="C5" library="SparkFun" deviceset="CAP_POL" device="PTH1" value="100u"/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP2" library="SparkFun" deviceset="M04" device="POLAR"/>
 <part name="C4" library="SparkFun" deviceset="CAP_POL" device="PTH1" value="100uF/25V"/>
-<part name="P+3" library="SparkFun" deviceset="VCC" device=""/>
+<part name="P+3" library="SparkFun" deviceset="5V" device=""/>
 <part name="LOG" library="My Library" deviceset="POT" device="-RV16AF-20" value="2.5k"/>
 <part name="R2" library="My Library" deviceset="RESISTOR" device="PTH-1/6W" value="49.9"/>
 <part name="R4" library="My Library" deviceset="RESISTOR" device="PTH-1/6W" value="64.9k"/>
@@ -2412,14 +2430,14 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="U1" gate="G$1" x="2.54" y="60.96"/>
 <instance part="R7" gate="G$1" x="40.64" y="71.12" rot="R90"/>
 <instance part="IC1" gate="P" x="58.42" y="55.88" smashed="yes"/>
-<instance part="P+1" gate="1" x="58.42" y="91.44"/>
+<instance part="P+1" gate="G$1" x="58.42" y="91.44"/>
 <instance part="P+2" gate="1" x="99.06" y="68.58"/>
 <instance part="GND5" gate="1" x="99.06" y="22.86"/>
 <instance part="C5" gate="G$1" x="78.74" y="86.36"/>
 <instance part="GND6" gate="1" x="78.74" y="76.2"/>
 <instance part="JP2" gate="G$1" x="106.68" y="58.42" rot="MR0"/>
 <instance part="C4" gate="G$1" x="83.82" y="55.88" rot="R90"/>
-<instance part="P+3" gate="1" x="78.74" y="91.44"/>
+<instance part="P+3" gate="G$1" x="78.74" y="91.44"/>
 <instance part="LOG" gate="G$1" x="30.48" y="35.56" rot="MR0"/>
 <instance part="R2" gate="G$1" x="27.94" y="76.2" rot="R90"/>
 <instance part="R4" gate="G$1" x="48.26" y="81.28" rot="R180"/>
@@ -2504,7 +2522,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="P+1" gate="1" pin="VCC"/>
+<pinref part="P+1" gate="G$1" pin="5V"/>
 <wire x1="58.42" y1="73.66" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="P" pin="V+"/>
 <wire x1="58.42" y1="81.28" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
@@ -2521,7 +2539,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="+"/>
-<pinref part="P+3" gate="1" pin="VCC"/>
+<pinref part="P+3" gate="G$1" pin="5V"/>
 <wire x1="78.74" y1="91.44" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="88.9" x2="88.9" y2="91.44" width="0.1524" layer="91"/>

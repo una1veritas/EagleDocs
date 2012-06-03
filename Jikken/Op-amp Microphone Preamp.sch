@@ -2491,9 +2491,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="R3" library="SparkFun" deviceset="RESISTOR" device="PTH-1/6W" value="100"/>
 <part name="C1" library="SparkFun" deviceset="CAP_POL" device="PTH1" value="10u"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
-<part name="R5" library="SparkFun" deviceset="RESISTOR" device="PTH-1/6W" value="47k"/>
+<part name="R5" library="SparkFun" deviceset="RESISTOR" device="PTH-1/6W" value="22k"/>
 <part name="U1" library="SparkFun" deviceset="AUDIO-JACK" device="PTH"/>
-<part name="R7" library="SparkFun" deviceset="RESISTOR" device="PTH-1/6W" value="47k"/>
+<part name="R7" library="SparkFun" deviceset="RESISTOR" device="PTH-1/6W" value="68k"/>
 <part name="P+1" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+2" library="SparkFun" deviceset="VCC" device=""/>

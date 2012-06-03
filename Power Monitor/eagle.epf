@@ -1,0 +1,30 @@
+[Eagle]
+Version="06 02 00"
+Platform="Mac OS X"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/74xx-eu.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/analog-devices.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/linear-technology.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/linear.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/philips-semiconductors.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/st-microelectronics.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/texas.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/toshiba.lbr"
+UsedLibrary="/Users/sin/Documents/eagle/mylibrary/JPN.lbr"
+UsedLibrary="/Users/sin/Documents/eagle/mylibrary/My Library.lbr"
+UsedLibrary="/Users/sin/Documents/eagle/mylibrary/SparkFun.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="193 110 1041 587"
+State=2
+Number=0
+
+[Desktop]
+Screen="1440 900"
+Window="Win_1"

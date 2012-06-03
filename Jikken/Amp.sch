@@ -65,12 +65,20 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
@@ -11328,61 +11336,6 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </library>
 <library name="SparkFun">
 <packages>
-<package name="ALPS_POT">
-<wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
-<wire x1="6.73" y1="-4.93" x2="-5.346" y2="-4.93" width="0.2032" layer="51"/>
-<wire x1="-5.346" y1="-4.93" x2="-5.346" y2="4.93" width="0.2032" layer="51"/>
-<wire x1="-5.346" y1="4.93" x2="6.73" y2="4.93" width="0.2032" layer="51"/>
-<pad name="P$1" x="7" y="-2.5" drill="1" diameter="1.8796" shape="square"/>
-<pad name="P$2" x="7" y="0" drill="1" diameter="1.8796" shape="square"/>
-<pad name="P$3" x="7" y="2.5" drill="1" diameter="1.8796" shape="square"/>
-<pad name="P$4" x="0" y="-4.4" drill="2" shape="octagon"/>
-<pad name="P$5" x="0" y="4.4" drill="2" shape="octagon"/>
-</package>
-<package name="TRIM_POT">
-<pad name="2" x="0" y="2.54" drill="1" diameter="1.8796"/>
-<pad name="3" x="0" y="-2.54" drill="1" diameter="1.8796"/>
-<pad name="1" x="5.08" y="0" drill="1" diameter="1.8796"/>
-</package>
-<package name="3362U">
-<wire x1="-1.27" y1="-1.016" x2="6.35" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-1.016" x2="6.35" y2="6.096" width="0.127" layer="21"/>
-<wire x1="6.35" y1="6.096" x2="-1.27" y2="6.096" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="6.096" x2="-1.27" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="6.35" y2="-1.27" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="2.54" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="P$2" x="2.54" y="2.54" drill="1.016" diameter="1.8796"/>
-<pad name="P$3" x="5.08" y="2.54" drill="1.016" diameter="1.8796"/>
-</package>
-<package name="POT_ALPHA_RV16AF-20">
-<description>Package for Alpha RV16AF-20 potentiometer</description>
-<wire x1="-8.5" y1="0" x2="-8.5" y2="5.3" width="0.2032" layer="21"/>
-<wire x1="-8.5" y1="5.3" x2="8.5" y2="5.3" width="0.2032" layer="21"/>
-<wire x1="8.5" y1="5.3" x2="8.5" y2="0" width="0.2032" layer="21"/>
-<wire x1="-8.5" y1="0" x2="-6.5" y2="0" width="0.2032" layer="21"/>
-<wire x1="6.5" y1="0" x2="8.5" y2="0" width="0.2032" layer="21"/>
-<wire x1="-3" y1="0" x2="-3" y2="-17" width="0.127" layer="51"/>
-<wire x1="-3" y1="-17" x2="3" y2="-17" width="0.127" layer="51"/>
-<wire x1="3" y1="-17" x2="3" y2="0" width="0.127" layer="51"/>
-<wire x1="-3.5" y1="0" x2="-1.5" y2="0" width="0.2032" layer="21"/>
-<wire x1="1.5" y1="0" x2="3.5" y2="0" width="0.2032" layer="21"/>
-<pad name="1" x="-5" y="0" drill="1.5" diameter="2.54"/>
-<pad name="2" x="0" y="0" drill="1.5" diameter="2.54"/>
-<pad name="3" x="5" y="0" drill="1.5" diameter="2.54"/>
-<text x="-3" y="2.5" size="1.27" layer="21">&gt;Value</text>
-<text x="-8.4" y="5.6" size="1.27" layer="25">&gt;Name</text>
-</package>
-<package name="POT_MAMMOTH">
-<wire x1="0" y1="0" x2="7.62" y2="0" width="0.127" layer="51"/>
-<wire x1="-7.62" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
-<wire x1="-7.62" y1="0.03" x2="-7.62" y2="12.75" width="0.127" layer="51"/>
-<wire x1="7.62" y1="0.03" x2="7.62" y2="12.75" width="0.127" layer="51"/>
-<circle x="0" y="16.03" radius="8.293" width="0.127" layer="21"/>
-<circle x="0" y="16.3" radius="3.4" width="0.127" layer="21"/>
-<pad name="P$1" x="-4.73" y="-0.02" drill="1.1"/>
-<pad name="P$2" x="0" y="-0.02" drill="1.1"/>
-<pad name="P$3" x="4.67" y="-0.01" drill="1.1"/>
-</package>
 <package name="AUDIO-JACK">
 <wire x1="7.5" y1="6" x2="7.5" y2="-6" width="0.2032" layer="21"/>
 <wire x1="-3.5" y1="6" x2="-3.5" y2="4.5" width="0.2032" layer="51"/>
@@ -11824,30 +11777,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </package>
 </packages>
 <symbols>
-<symbol name="POT">
-<wire x1="0" y1="-5.08" x2="0" y2="-4.572" width="0.1524" layer="94"/>
-<wire x1="0" y1="-4.572" x2="-1.016" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-3.81" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="-1.016" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.016" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.27" x2="1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="-1.016" y2="3.81" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="3.81" x2="0" y2="4.572" width="0.254" layer="94"/>
-<wire x1="0" y1="4.572" x2="0" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="1.27" width="0.2032" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="1.27" y2="0" width="0.2032" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.2032" layer="94"/>
-<wire x1="2.032" y1="-4.699" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="2.032" y1="-2.159" x2="2.667" y2="-3.429" width="0.1524" layer="94"/>
-<wire x1="2.667" y1="-3.429" x2="1.397" y2="-3.429" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="-3.429" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
-<text x="5.08" y="-10.16" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="-2.54" y="-10.16" size="1.778" layer="95" rot="R90">&gt;Value</text>
-<pin name="A" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="E" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
 <symbol name="AUDIO-JACK">
 <wire x1="-1.27" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="0" y1="-1.27" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
@@ -11883,63 +11812,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="POT" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="POT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ALPS_POT">
-<connects>
-<connect gate="G$1" pin="A" pad="P$3"/>
-<connect gate="G$1" pin="E" pad="P$1"/>
-<connect gate="G$1" pin="S" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TRIM" package="TRIM_POT">
-<connects>
-<connect gate="G$1" pin="A" pad="3"/>
-<connect gate="G$1" pin="E" pad="2"/>
-<connect gate="G$1" pin="S" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="100K_3362U" package="3362U">
-<connects>
-<connect gate="G$1" pin="A" pad="P$3"/>
-<connect gate="G$1" pin="E" pad="P$1"/>
-<connect gate="G$1" pin="S" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-RV16AF-20" package="POT_ALPHA_RV16AF-20">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="E" pad="3"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MAM" package="POT_MAMMOTH">
-<connects>
-<connect gate="G$1" pin="A" pad="P$2"/>
-<connect gate="G$1" pin="E" pad="P$3"/>
-<connect gate="G$1" pin="S" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="AUDIO-JACK" prefix="U" uservalue="yes">
 <description>&lt;b&gt;3.5mm Audio Jack&lt;/b&gt;
 Simple 3.5mm common PCB mount audio jack. SKU: PRT-08032</description>
@@ -12163,6 +12035,129 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
+<library name="My Library">
+<packages>
+<package name="3362U">
+<wire x1="-1.27" y1="-1.016" x2="6.35" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-1.016" x2="6.35" y2="6.096" width="0.127" layer="21"/>
+<wire x1="6.35" y1="6.096" x2="-1.27" y2="6.096" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="6.096" x2="-1.27" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="6.35" y2="-1.27" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="2.54" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="P$2" x="2.54" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="P$3" x="5.08" y="2.54" drill="1.016" diameter="1.8796"/>
+</package>
+<package name="ALPS_POT">
+<wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
+<wire x1="6.73" y1="-4.93" x2="-5.346" y2="-4.93" width="0.2032" layer="51"/>
+<wire x1="-5.346" y1="-4.93" x2="-5.346" y2="4.93" width="0.2032" layer="51"/>
+<wire x1="-5.346" y1="4.93" x2="6.73" y2="4.93" width="0.2032" layer="51"/>
+<pad name="P$1" x="7" y="-2.5" drill="1" diameter="1.8796" shape="square"/>
+<pad name="P$2" x="7" y="0" drill="1" diameter="1.8796" shape="square"/>
+<pad name="P$3" x="7" y="2.5" drill="1" diameter="1.8796" shape="square"/>
+<pad name="P$4" x="0" y="-4.4" drill="2" shape="octagon"/>
+<pad name="P$5" x="0" y="4.4" drill="2" shape="octagon"/>
+</package>
+<package name="TRIM_POT">
+<pad name="2" x="0" y="2.54" drill="1" diameter="1.8796"/>
+<pad name="3" x="0" y="-2.54" drill="1" diameter="1.8796"/>
+<pad name="1" x="5.08" y="0" drill="1" diameter="1.8796"/>
+</package>
+<package name="POT_ALPHA_RV16AF-20">
+<description>Package for Alpha RV16AF-20 potentiometer</description>
+<wire x1="-8.5" y1="0" x2="-8.5" y2="5.3" width="0.2032" layer="21"/>
+<wire x1="-8.5" y1="5.3" x2="8.5" y2="5.3" width="0.2032" layer="21"/>
+<wire x1="8.5" y1="5.3" x2="8.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-8.5" y1="0" x2="-6.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="6.5" y1="0" x2="8.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-3" y1="0" x2="-3" y2="-17" width="0.127" layer="51"/>
+<wire x1="-3" y1="-17" x2="3" y2="-17" width="0.127" layer="51"/>
+<wire x1="3" y1="-17" x2="3" y2="0" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="0" x2="-1.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="0" x2="3.5" y2="0" width="0.2032" layer="21"/>
+<pad name="1" x="-5" y="0" drill="1.5" diameter="2.54"/>
+<pad name="2" x="0" y="0" drill="1.5" diameter="2.54"/>
+<pad name="3" x="5" y="0" drill="1.5" diameter="2.54"/>
+<text x="-3" y="2.5" size="1.27" layer="21">&gt;Value</text>
+<text x="-8.4" y="5.6" size="1.27" layer="25">&gt;Name</text>
+</package>
+</packages>
+<symbols>
+<symbol name="POT">
+<wire x1="0" y1="-5.08" x2="0" y2="-4.572" width="0.1524" layer="94"/>
+<wire x1="0" y1="4.572" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0.635" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="-0.635" x2="1.27" y2="0" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.2032" layer="94"/>
+<wire x1="1.905" y1="-1.905" x2="1.905" y2="-3.81" width="0.1524" layer="94"/>
+<text x="3.81" y="1.27" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.778" layer="95" rot="R90">&gt;Value</text>
+<pin name="A" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="0" y1="-2.54" x2="-1.016" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="-2.159" x2="1.016" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.524" x2="-1.016" y2="-0.889" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="-0.889" x2="1.016" y2="-0.254" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-0.254" x2="-1.016" y2="0.381" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="0.381" x2="1.016" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="1.016" x2="-1.016" y2="1.651" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="1.651" x2="1.016" y2="2.286" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="2.286" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="-1.905" x2="1.5875" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="-1.905" x2="2.2225" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="POT" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="POT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ALPS_POT">
+<connects>
+<connect gate="G$1" pin="A" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TRIM" package="TRIM_POT">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+<connect gate="G$1" pin="S" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="100K_3362U" package="3362U">
+<connects>
+<connect gate="G$1" pin="A" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-RV16AF-20" package="POT_ALPHA_RV16AF-20">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12180,7 +12175,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="R5" library="rcl" deviceset="R-EU_" device="0204/5" value="2k2"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="0204/5" value="2k2"/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="0204/5" value="10"/>
-<part name="C1" library="rcl" deviceset="CPOL-EU" device="E1.8-4"/>
+<part name="C1" library="rcl" deviceset="CPOL-EU" device="E1.8-4" value="10u"/>
 <part name="C2" library="rcl" deviceset="CPOL-EU" device="E1.8-4" value="10u"/>
 <part name="C3" library="rcl" deviceset="CPOL-EU" device="E1.8-4" value="10u"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1u"/>
@@ -12195,8 +12190,8 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
-<part name="U$1" library="SparkFun" deviceset="POT" device="100K_3362U" value="20k"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="0204/5" value="200k"/>
+<part name="U$1" library="My Library" deviceset="POT" device="100K_3362U" value="20k"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="0204/5" value="220k"/>
 <part name="U1" library="SparkFun" deviceset="AUDIO-JACK" device="HOLESONLY" value="INPUT"/>
 <part name="JP1" library="SparkFun" deviceset="M04" device="POLAR" value="POWER"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
@@ -12232,7 +12227,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="SUPPLY6" gate="GND" x="73.66" y="44.45"/>
 <instance part="SUPPLY9" gate="GND" x="40.64" y="83.82"/>
 <instance part="SUPPLY10" gate="GND" x="48.26" y="83.82"/>
-<instance part="U$1" gate="G$1" x="68.58" y="86.36" rot="R90"/>
+<instance part="U$1" gate="G$1" x="68.58" y="81.28" rot="R90"/>
 <instance part="R7" gate="G$1" x="73.66" y="66.04" rot="R90"/>
 <instance part="U1" gate="G$1" x="10.16" y="78.74"/>
 <instance part="JP1" gate="G$1" x="104.14" y="96.52" rot="R180"/>
@@ -12344,7 +12339,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="VCC" class="0">
 <segment>
-<wire x1="68.58" y1="91.44" x2="68.58" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="86.36" x2="68.58" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="101.6" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="106.68" x2="58.42" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="106.68" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
@@ -12392,7 +12387,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="N$13" class="0">
 <segment>
-<wire x1="60.96" y1="86.36" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="81.28" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="ON1"/>
 <pinref part="U$1" gate="G$1" pin="E"/>
 </segment>
@@ -12400,8 +12395,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <net name="N$12" class="0">
 <segment>
 <wire x1="68.58" y1="76.2" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="76.2" x2="76.2" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="76.2" x2="76.2" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="76.2" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="ON2"/>
 <pinref part="U$1" gate="G$1" pin="A"/>
 </segment>
