@@ -10,8 +10,8 @@ AutoSaveProject=1
 
 [Win_1]
 Type="Control Panel"
-Loc="193 110 1041 587"
-State=2
+Loc="193 110 908 546"
+State=0
 Number=0
 
 [Desktop]
