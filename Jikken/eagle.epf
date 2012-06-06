@@ -8,6 +8,9 @@ Desktop="Desktop"
 [Globals]
 AutoSaveProject=1
 UsedLibrary="/Applications/EAGLE-6.2.0/lbr/linear.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/pot.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/rcl.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/resistor.lbr"
 UsedLibrary="/Applications/EAGLE-6.2.0/lbr/st-microelectronics.lbr"
 UsedLibrary="/Applications/EAGLE-6.2.0/lbr/texas.lbr"
 UsedLibrary="/Users/sin/Documents/eagle/mylibrary/My Library.lbr"
@@ -15,10 +18,15 @@ UsedLibrary="/Users/sin/Documents/eagle/mylibrary/SparkFun.lbr"
 
 [Win_1]
 Type="Board Editor"
-Loc="360 248 959 647"
+Loc="480 338 1079 737"
 State=0
+<<<<<<< HEAD
 Number=2
 File="/Users/sin/Documents/eagle/Microchip SPI SRAM/23Kxxx.brd"
+=======
+Number=1
+File="380 NFB.brd"
+>>>>>>> 51b28d0a9427741e19a7536156cc99a8c177f92b
 View="-2 -1.6 102 81.6"
 WireWidths=" 0 0.254 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
@@ -59,6 +67,6 @@ State=2
 Number=0
 
 [Desktop]
-Screen="1440 900"
+Screen="1920 1200"
 Window="Win_1"
 Window="Win_2"
