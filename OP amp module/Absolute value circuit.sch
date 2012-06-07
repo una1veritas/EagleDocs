@@ -7156,11 +7156,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
 <pin name="1" x="7.62" y="0" visible="off" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="GND">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="M01" prefix="JP">
@@ -7276,10 +7271,32 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="GND" prefix="GND">
+</devicesets>
+</library>
+<library name="supply2">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+Please keep in mind, that these devices are necessary for the
+automatic wiring of the supply signals.&lt;p&gt;
+The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+05V/2">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-3.81" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+5V/2" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+5V/2" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
-<gate name="1" symbol="GND" x="0" y="0"/>
+<gate name="G$1" symbol="+05V/2" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -7310,7 +7327,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="R3" library="rcl" deviceset="R-US_" device="0204/5" value="10k"/>
 <part name="JP1" library="SparkFun" deviceset="M01" device="PTH"/>
 <part name="JP2" library="SparkFun" deviceset="M01" device="PTH"/>
-<part name="GND1" library="SparkFun" deviceset="GND" device=""/>
+<part name="SUPPLY1" library="supply2" deviceset="+5V/2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7324,10 +7341,10 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="C1" gate="G$1" x="55.88" y="50.8" rot="R90"/>
 <instance part="R1" gate="G$1" x="66.04" y="45.72"/>
 <instance part="R2" gate="G$1" x="86.36" y="45.72"/>
-<instance part="R3" gate="G$1" x="73.66" y="50.8" rot="R90"/>
+<instance part="R3" gate="G$1" x="73.66" y="68.58" rot="R270"/>
 <instance part="JP1" gate="G$1" x="25.4" y="63.5"/>
 <instance part="JP2" gate="G$1" x="109.22" y="58.42" rot="MR0"/>
-<instance part="GND1" gate="1" x="73.66" y="35.56"/>
+<instance part="SUPPLY1" gate="G$1" x="73.66" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -7339,7 +7356,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="66.04" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="60.96" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="60.96" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="60.96" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
 <junction x="73.66" y="60.96"/>
 </segment>
 </net>
@@ -7380,13 +7397,6 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <junction x="53.34" y="60.96"/>
 </segment>
 </net>
-<net name="GND" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="73.66" y1="45.72" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="IC1" gate="B" pin="OUT"/>
@@ -7409,6 +7419,13 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="81.28" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="55.88" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
 <junction x="78.74" y="45.72"/>
+</segment>
+</net>
+<net name="+5V/2" class="0">
+<segment>
+<pinref part="SUPPLY1" gate="G$1" pin="+5V/2"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="73.66" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
