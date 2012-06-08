@@ -16,6 +16,7 @@ UsedLibrary="/Applications/EAGLE-6.2.0/lbr/rcl.lbr"
 UsedLibrary="/Applications/EAGLE-6.2.0/lbr/resistor.lbr"
 UsedLibrary="/Applications/EAGLE-6.2.0/lbr/st-microelectronics.lbr"
 UsedLibrary="/Applications/EAGLE-6.2.0/lbr/supply1.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/supply2.lbr"
 UsedLibrary="/Applications/EAGLE-6.2.0/lbr/texas.lbr"
 UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/JPN.lbr"
 UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/My Library.lbr"
@@ -66,6 +67,7 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
+Views=" 1: 20.4148 31.6924 116.745 69.9076"
 Sheet=1
 
 [Desktop]
