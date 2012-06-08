@@ -2470,11 +2470,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="R5" library="SparkFun" deviceset="RESISTOR" device="PTH-1/6W" value="22k"/>
 <part name="U1" library="SparkFun" deviceset="AUDIO-JACK" device="PTH"/>
-<<<<<<< HEAD:Jikken/Op-amp Microphone Preamp.sch
-<part name="R7" library="SparkFun" deviceset="RESISTOR" device="PTH-1/6W" value="68k"/>
-=======
 <part name="R7" library="SparkFun" deviceset="RESISTOR" device="PTH-1/6W" value="68k fot 9V"/>
->>>>>>> 51b28d0a9427741e19a7536156cc99a8c177f92b:Jikken/Simple Op Mic-Preamp single.sch
 <part name="P+1" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+2" library="SparkFun" deviceset="VCC" device=""/>
