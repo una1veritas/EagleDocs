@@ -27,7 +27,7 @@ Number=0
 
 [Win_2]
 Type="Schematic Editor"
-Loc="360 248 1704 997"
+Loc="95 88 1439 837"
 State=1
 Number=1
 File="/Users/sin/Documents/eagle/OP amp module/Constant current.sch"
