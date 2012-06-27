@@ -1080,6 +1080,25 @@ package type ST</description>
 <rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
 <rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
 </package>
+<package name="TO220V-REG">
+<description>&lt;b&gt;TO 220 Vertical&lt;/b&gt; Package works with various parts including N-Channel MOSFET SparkFun SKU: COM-10213</description>
+<wire x1="-5.08" y1="2.032" x2="-5.08" y2="-0.381" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="2.032" x2="5.08" y2="-0.381" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="2.032" x2="-5.08" y2="2.032" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="2.032" x2="-5.08" y2="3.048" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="3.048" x2="5.08" y2="3.048" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="3.048" x2="5.08" y2="2.032" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-0.381" x2="-4.191" y2="-1.27" width="0.2032" layer="21" curve="92.798868"/>
+<wire x1="5.08" y1="-0.381" x2="4.191" y2="-1.27" width="0.2032" layer="21" curve="-92.798868"/>
+<wire x1="-4.191" y1="-1.27" x2="-3.81" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.191" y1="-1.27" x2="3.81" y2="-1.27" width="0.2032" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.794" y="3.429" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.302" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-5.08" y1="2.032" x2="5.08" y2="3.048" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LMC555">
@@ -1695,9 +1714,9 @@ package type ST</description>
 <text x="-2.032" y="-4.318" size="1.524" layer="95">ADJ</text>
 <text x="-6.985" y="-0.635" size="1.524" layer="95">IN</text>
 <text x="2.667" y="-0.635" size="1.524" layer="95">OUT</text>
-<pin name="IN" x="-10.16" y="0" visible="off" length="short" direction="in"/>
-<pin name="ADJ" x="0" y="-7.62" visible="off" length="short" direction="in" rot="R90"/>
-<pin name="OUT" x="10.16" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="IN" x="-10.16" y="0" visible="pad" length="short" direction="in"/>
+<pin name="ADJ" x="0" y="-7.62" visible="pad" length="short" direction="in" rot="R90"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2532,11 +2551,11 @@ Simple 3.5mm common PCB mount audio jack. SKU: PRT-08032</description>
 <gate name="1" symbol="VREG_ADJ" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220CS">
+<device name="" package="TO220V-REG">
 <connects>
-<connect gate="1" pin="ADJ" pad="A"/>
-<connect gate="1" pin="IN" pad="C"/>
-<connect gate="1" pin="OUT" pad="G"/>
+<connect gate="1" pin="ADJ" pad="1"/>
+<connect gate="1" pin="IN" pad="3"/>
+<connect gate="1" pin="OUT" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
