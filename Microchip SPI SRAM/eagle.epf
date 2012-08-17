@@ -22,10 +22,10 @@ UsedLibrary="/Applications/EAGLE-6.2.0/lbr/transistor-power.lbr"
 UsedLibrary="/Applications/EAGLE-6.2.0/lbr/transistor-small-signal.lbr"
 UsedLibrary="/Applications/EAGLE-6.2.0/lbr/transistor.lbr"
 UsedLibrary="/Applications/EAGLE-6.2.0/lbr/triac.lbr"
-UsedLibrary="/Users/sin/Documents/eagle/mylibrary/JPN.lbr"
-UsedLibrary="/Users/sin/Documents/eagle/mylibrary/My Library.lbr"
-UsedLibrary="/Users/sin/Documents/eagle/mylibrary/SparkFun.lbr"
-UsedLibrary="/Users/sin/Documents/eagle/mylibrary/adafruit.lbr"
+UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/JPN.lbr"
+UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/My Library.lbr"
+UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/SparkFun.lbr"
+UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/adafruit.lbr"
 UsedLibrary="/Users/sin/Documents/eagle/mylibrary/avr-7.lbr"
 UsedLibrary="/Users/sin/Documents/eagle/mylibrary/microchip-dspic.lbr"
 UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/EAGLE/GME_2004 knižnica/GME_2004/tranzistory PNP.lbr"
@@ -33,10 +33,10 @@ UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/EAGLE/GME_2004 knižnica/GME_2
 
 [Win_1]
 Type="Control Panel"
-Loc="193 110 1041 587"
+Loc="193 110 908 546"
 State=2
 Number=0
 
 [Desktop]
-Screen="1440 900"
+Screen="1920 1200"
 Window="Win_1"
