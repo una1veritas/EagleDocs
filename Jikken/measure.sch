@@ -112,14 +112,6 @@
 <libraries>
 <library name="My Library">
 <packages>
-<package name="METER">
-<circle x="0" y="0" radius="10.16" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="0" x2="-10.16" y2="-11.43" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="-11.43" x2="10.16" y2="-11.43" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-11.43" x2="10.16" y2="0" width="0.127" layer="21"/>
-<pad name="+" x="-3.81" y="-5.08" drill="0.8" diameter="1.9304"/>
-<pad name="-" x="3.81" y="-5.08" drill="0.8" diameter="1.9304"/>
-</package>
 <package name="AXIAL-0.3">
 <wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
 <wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
@@ -250,22 +242,6 @@ Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;br&g
 </package>
 </packages>
 <symbols>
-<symbol name="AMMETER">
-<text x="0" y="0" size="5.7658" layer="94" align="center">A</text>
-<pin name="P$1" x="-7.62" y="0" visible="pad" length="short" direction="in"/>
-<pin name="P$2" x="7.62" y="0" visible="pad" length="short" direction="in" rot="R180"/>
-<circle x="0" y="0" radius="4.445" width="0.254" layer="94"/>
-<wire x1="-4.445" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="4.445" y2="0" width="0.1524" layer="94"/>
-</symbol>
-<symbol name="VOLTMETER">
-<text x="0" y="0" size="5.7658" layer="94" align="center">V</text>
-<pin name="P$1" x="-10.16" y="0" visible="pad" length="middle" direction="in"/>
-<pin name="P$2" x="10.16" y="0" visible="pad" length="middle" direction="in" rot="R180"/>
-<circle x="0" y="0" radius="4.445" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-4.445" y2="0" width="0.1524" layer="94"/>
-<wire x1="4.445" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-</symbol>
 <symbol name="RESISTOR">
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
 <wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
@@ -293,38 +269,6 @@ Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;br&g
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AMMETER">
-<gates>
-<gate name="G$1" symbol="AMMETER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="METER">
-<connects>
-<connect gate="G$1" pin="P$1" pad="+"/>
-<connect gate="G$1" pin="P$2" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VOLTMETER">
-<gates>
-<gate name="G$1" symbol="VOLTMETER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="METER">
-<connects>
-<connect gate="G$1" pin="P$1" pad="+"/>
-<connect gate="G$1" pin="P$2" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RESISTOR" prefix="R" uservalue="yes">
 <description>&lt;b&gt;Resistor&lt;/b&gt;
 Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</description>
@@ -449,6 +393,90 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </deviceset>
 </devicesets>
 </library>
+<library name="switch">
+<description>&lt;b&gt;Switches&lt;/b&gt;&lt;p&gt;
+Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="REKN">
+<description>&lt;b&gt;PUSH SWITCH&lt;/b&gt;&lt;p&gt;
+ITT-Cannon-Cannon</description>
+<wire x1="-6.8999" y1="-6.1001" x2="-3.5999" y2="-6.1001" width="0.2032" layer="21"/>
+<wire x1="-3.5999" y1="-6.1001" x2="6.8999" y2="-6.1001" width="0.2032" layer="21"/>
+<wire x1="6.8999" y1="-6.1001" x2="6.8999" y2="6.1001" width="0.2032" layer="21"/>
+<wire x1="6.8999" y1="6.1001" x2="-3.5999" y2="6.1001" width="0.2032" layer="21"/>
+<wire x1="-3.5999" y1="6.1001" x2="-6.8999" y2="6.1001" width="0.2032" layer="21"/>
+<wire x1="-6.8999" y1="6.1001" x2="-6.8999" y2="-6.1001" width="0.2032" layer="21"/>
+<wire x1="-3.5999" y1="-6.1001" x2="-3.5999" y2="6.1001" width="0.2032" layer="21"/>
+<wire x1="-3.5999" y1="-6.1001" x2="-2.54" y2="-4.064" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-4.064" x2="-2.54" y2="4.064" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="4.064" x2="-3.5999" y2="6.1001" width="0.2032" layer="21"/>
+<wire x1="6.8999" y1="-6.1001" x2="5.969" y2="-4.064" width="0.2032" layer="21"/>
+<wire x1="5.969" y1="-4.064" x2="5.969" y2="4.064" width="0.2032" layer="21"/>
+<wire x1="5.969" y1="4.064" x2="6.8999" y2="6.1001" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="4.064" x2="5.969" y2="4.064" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-4.064" x2="5.969" y2="-4.064" width="0.2032" layer="21"/>
+<pad name="0A" x="5.08" y="5.08" drill="0.8998" shape="long" rot="R90"/>
+<pad name="1A" x="0" y="5.08" drill="0.8998" shape="long" rot="R90"/>
+<pad name="A" x="-5.08" y="5.08" drill="0.8998" shape="long" rot="R90"/>
+<pad name="B" x="-5.08" y="-5.08" drill="0.8998" shape="long" rot="R90"/>
+<pad name="1B" x="0" y="-5.08" drill="0.8998" shape="long" rot="R90"/>
+<pad name="0B" x="5.08" y="-5.08" drill="0.8998" shape="long" rot="R90"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="-5.08" y="0" drill="1.1"/>
+<hole x="5.08" y="0" drill="1.1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NORMOPEN">
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="3.048" y2="1.778" width="0.2032" layer="94"/>
+<wire x1="3.048" y1="0.508" x2="3.048" y2="0" width="0.2032" layer="94"/>
+<wire x1="0.762" y1="1.016" x2="0.762" y2="1.524" width="0.2032" layer="94"/>
+<wire x1="0.762" y1="2.032" x2="0.762" y2="2.794" width="0.2032" layer="94"/>
+<wire x1="0.762" y1="2.794" x2="0.762" y2="3.048" width="0.2032" layer="94"/>
+<wire x1="0.762" y1="3.556" x2="0.762" y2="4.064" width="0.2032" layer="94"/>
+<wire x1="1.27" y1="4.064" x2="0.762" y2="4.064" width="0.2032" layer="94"/>
+<wire x1="0.762" y1="4.064" x2="0.254" y2="4.064" width="0.2032" layer="94"/>
+<wire x1="0.254" y1="2.286" x2="0.762" y2="2.794" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.794" x2="1.27" y2="2.286" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.2032" layer="94"/>
+<wire x1="3.048" y1="0" x2="5.08" y2="0" width="0.2032" layer="94"/>
+<circle x="-2.54" y="0" radius="0.508" width="0" layer="94"/>
+<circle x="5.08" y="0" radius="0.508" width="0" layer="94"/>
+<text x="-3.048" y="4.826" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-5.588" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="0@A" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="0@B" x="-5.08" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="1@B" x="7.62" y="-2.54" visible="off" length="short" direction="pas" swaplevel="2" rot="R180"/>
+<pin name="1@A" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="2" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="REKN" prefix="S" uservalue="yes">
+<description>&lt;b&gt;PUSH SWITCH&lt;/b&gt;&lt;p&gt;
+ITT-Cannon-Cannon</description>
+<gates>
+<gate name="G$1" symbol="NORMOPEN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REKN">
+<connects>
+<connect gate="G$1" pin="0@A" pad="0A"/>
+<connect gate="G$1" pin="0@B" pad="0B"/>
+<connect gate="G$1" pin="1@A" pad="1A"/>
+<connect gate="G$1" pin="1@B" pad="1B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -459,12 +487,20 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </class>
 </classes>
 <parts>
-<part name="U$1" library="My Library" deviceset="AMMETER" device=""/>
-<part name="U$2" library="My Library" deviceset="VOLTMETER" device=""/>
-<part name="LOAD" library="My Library" deviceset="RESISTOR" device="PTH-1/4W"/>
+<part name="R2" library="My Library" deviceset="RESISTOR" device="PTH-1/4W"/>
 <part name="DC_POEWR" library="My Library" deviceset="DCPOWER" device=""/>
 <part name="SUPPLY1" library="supply1" deviceset="AGND" device=""/>
 <part name="SUPPLY2" library="supply1" deviceset="AGND" device=""/>
+<part name="R1" library="My Library" deviceset="RESISTOR" device="PTH-1/4W"/>
+<part name="R3" library="My Library" deviceset="RESISTOR" device="PTH-1/4W"/>
+<part name="R4" library="My Library" deviceset="RESISTOR" device="PTH-1/4W"/>
+<part name="R5" library="My Library" deviceset="RESISTOR" device="PTH-1/4W"/>
+<part name="R6" library="My Library" deviceset="RESISTOR" device="PTH-1/4W"/>
+<part name="R7" library="My Library" deviceset="RESISTOR" device="PTH-1/4W"/>
+<part name="S1" library="switch" deviceset="REKN" device=""/>
+<part name="S2" library="switch" deviceset="REKN" device=""/>
+<part name="S3" library="switch" deviceset="REKN" device=""/>
+<part name="S4" library="switch" deviceset="REKN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -472,49 +508,113 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <text x="50.8" y="48.26" size="1.778" layer="91">DC Power</text>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="63.5" y="66.04"/>
-<instance part="U$2" gate="G$1" x="91.44" y="55.88"/>
-<instance part="LOAD" gate="G$1" x="91.44" y="66.04"/>
-<instance part="DC_POEWR" gate="G$1" x="48.26" y="55.88"/>
-<instance part="SUPPLY1" gate="VR1" x="48.26" y="38.1" smashed="yes"/>
-<instance part="SUPPLY2" gate="VR1" x="111.76" y="38.1" smashed="yes"/>
+<instance part="R2" gate="G$1" x="91.44" y="63.5"/>
+<instance part="DC_POEWR" gate="G$1" x="53.34" y="55.88"/>
+<instance part="SUPPLY1" gate="VR1" x="53.34" y="27.94" smashed="yes"/>
+<instance part="SUPPLY2" gate="VR1" x="99.06" y="27.94" smashed="yes"/>
+<instance part="R1" gate="G$1" x="91.44" y="78.74"/>
+<instance part="R3" gate="G$1" x="91.44" y="48.26"/>
+<instance part="R4" gate="G$1" x="91.44" y="33.02"/>
+<instance part="R5" gate="G$1" x="99.06" y="40.64" rot="R90"/>
+<instance part="R6" gate="G$1" x="99.06" y="55.88" rot="R90"/>
+<instance part="R7" gate="G$1" x="99.06" y="71.12" rot="R90"/>
+<instance part="S1" gate="G$1" x="76.2" y="78.74"/>
+<instance part="S2" gate="G$1" x="76.2" y="63.5"/>
+<instance part="S3" gate="G$1" x="76.2" y="48.26"/>
+<instance part="S4" gate="G$1" x="76.2" y="33.02"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="P$1"/>
-<wire x1="48.26" y1="66.04" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="66.04" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="78.74" x2="66.04" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="DC_POEWR" gate="G$1" pin="VOUT"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="P$2"/>
-<pinref part="LOAD" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="66.04" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P$1"/>
-<wire x1="81.28" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="55.88" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
-<junction x="81.28" y="66.04"/>
+<pinref part="S1" gate="G$1" pin="0@A"/>
+<wire x1="66.04" y1="78.74" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="78.74" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="S4" gate="G$1" pin="0@A"/>
+<wire x1="66.04" y1="63.5" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="48.26" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="S3" gate="G$1" pin="0@A"/>
+<wire x1="71.12" y1="48.26" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="48.26" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="S2" gate="G$1" pin="0@A"/>
+<wire x1="71.12" y1="63.5" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
+<junction x="66.04" y="48.26"/>
+<junction x="66.04" y="63.5"/>
+<junction x="66.04" y="78.74"/>
 </segment>
 </net>
 <net name="AGND" class="0">
 <segment>
 <pinref part="DC_POEWR" gate="G$1" pin="VGND"/>
-<wire x1="48.26" y1="45.72" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="45.72" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="VR1" pin="AGND"/>
 </segment>
 <segment>
-<pinref part="LOAD" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="66.04" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="66.04" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P$2"/>
-<wire x1="101.6" y1="55.88" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="35.56" x2="99.06" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="33.02" x2="96.52" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="VR1" pin="AGND"/>
-<junction x="101.6" y="66.04"/>
+<wire x1="99.06" y1="30.48" x2="99.06" y2="33.02" width="0.1524" layer="91"/>
+<junction x="99.06" y="33.02"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="S1" gate="G$1" pin="1@A"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="78.74" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="S2" gate="G$1" pin="1@A"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="63.5" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="S3" gate="G$1" pin="1@A"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="48.26" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="78.74" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="78.74" x2="109.22" y2="78.74" width="0.1524" layer="91"/>
+<junction x="99.06" y="78.74"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="66.04" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="63.5" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
+<junction x="99.06" y="63.5"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="50.8" x2="99.06" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="48.26" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="48.26" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
+<junction x="99.06" y="48.26"/>
 </segment>
 </net>
 </nets>
