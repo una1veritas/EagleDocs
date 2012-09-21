@@ -7,6 +7,7 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/microchip.lbr"
 UsedLibrary="/Users/sin/Documents/eagle/mylibrary/JPN.lbr"
 UsedLibrary="/Users/sin/Documents/eagle/mylibrary/My Library.lbr"
 
