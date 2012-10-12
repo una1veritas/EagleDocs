@@ -28,8 +28,6 @@ UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/SparkFun.lbr"
 UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/adafruit.lbr"
 UsedLibrary="/Users/sin/Documents/eagle/mylibrary/avr-7.lbr"
 UsedLibrary="/Users/sin/Documents/eagle/mylibrary/microchip-dspic.lbr"
-UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/EAGLE/GME_2004 knižnica/GME_2004/tranzistory PNP.lbr"
-UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/EAGLE/GME_2004 knižnica/GME_2004/tranzistory NPN.lbr"
 
 [Win_1]
 Type="Control Panel"
