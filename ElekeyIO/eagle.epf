@@ -1,0 +1,46 @@
+[Eagle]
+Version="06 02 00"
+Platform="Mac OS X"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/avago.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/con-jst.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/con-molex.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/microchip.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/national-semiconductor.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/photo-elements.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/renesas.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/resistor.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/smd-ipc.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/smd-special.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/st-microelectronics.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/supply1.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/toshiba.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/transistor-fet.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/transistor-neu-to92.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/transistor-npn.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/transistor-pnp.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/transistor-power.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/transistor-small-signal.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/transistor.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/triac.lbr"
+UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/JPN.lbr"
+UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/My Library.lbr"
+UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/SparkFun.lbr"
+UsedLibrary="/Users/sin/Documents/eagle/MyLibrary/adafruit.lbr"
+UsedLibrary="/Users/sin/Documents/eagle/mylibrary/avr-7.lbr"
+UsedLibrary="/Users/sin/Documents/eagle/mylibrary/microchip-dspic.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="193 110 908 546"
+State=2
+Number=0
+
+[Desktop]
+Screen="1920 1200"
+Window="Win_1"
