@@ -1,5 +1,5 @@
 [Eagle]
-Version="06 02 00"
+Version="07 01 00"
 Platform="Mac OS X"
 Serial="62191E841E-LSR-WLM-1EL"
 Globals="Globals"
@@ -12,7 +12,7 @@ UsedLibrary="/Users/sin/Documents/eagle/mylibrary/My Library.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="340 169 939 568"
+Loc="480 338 1079 737"
 State=2
 Number=0
 
